@@ -154,15 +154,50 @@ recs = recommender.recommend(
 )
 ```
 
+## 🚀 API Server (Step 2 - COMPLETE!)
+
+The FastAPI backend is now ready!
+
+### Start the API Server
+
+```bash
+# Start the server
+python main.py
+```
+
+Server runs at: **http://localhost:8000**
+
+### Interactive API Documentation
+
+- **Swagger UI**: http://localhost:8000/docs
+- **ReDoc**: http://localhost:8000/redoc
+
+### Test All Endpoints
+
+```bash
+python test_api.py
+```
+
+See **API_GUIDE.md** for complete documentation and examples.
+
+### Key API Endpoints
+
+- `POST /api/recommend` - Get personalized recommendations
+- `POST /api/explain` - Explain why a movie was recommended
+- `POST /api/rate` - Submit movie ratings
+- `POST /api/search` - Search for movies
+- `POST /api/auth/login` - User authentication
+
 ## 📈 Next Steps
 
-This is **Step 1** of the end-to-end system. Next phases:
+✅ **Step 1**: Model modularization - COMPLETE  
+✅ **Step 2**: FastAPI backend - COMPLETE
 
-- **Phase 2**: FastAPI backend with REST endpoints
+Next phases:
+
 - **Phase 3**: PostgreSQL + Redis for persistence
 - **Phase 4**: React frontend
-- **Phase 5**: User auth & personalization
-- **Phase 6**: Docker deployment
+- **Phase 5**: Docker deployment
 
 ## 📝 Notes
 
